@@ -4,7 +4,7 @@
 
 ### Welcome to my web-programming hobby project! 
 
-As an avid knitter and freshly graduated developer, I figured I ought to have a project which combines my interest of knitting and programming - *this is that.*
+As an avid knitter and freshly graduated developer, I figured I ought to have a project which combines my interest for knitting and programming - *this is that project.*
 
 ### What am I hoping to achieve?
 
