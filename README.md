@@ -4,12 +4,7 @@
 
 ### Welcome to my web-programming hobby project! 
 
-As an avid knitter and freshly graduated developer, I figured I ought to have a project which combines my interest of knitting and programming. 
-<br><br>
-
-*This is that.*
-
----
+As an avid knitter and freshly graduated developer, I figured I ought to have a project which combines my interest of knitting and programming - *this is that.*
 
 ### What am I hoping to achieve?
 
@@ -19,13 +14,10 @@ Secondly, I wish to test out new technologies and explore the possibilities of c
 
 A lot of digital knitting tools are old, ugly and outdated - with a UX which makes you want to pull your hair out of your scalp. This project will act as an outlet for my frustrations (though it will certainly be the cause of new ones), and allow me to create thorough, modern and creative tools to use in my old granny hobby.
 
-
 The long-term goal is to build and expand the website with different modules and functionality, but there's no clear plan quite yet - It's a work in progress. 
-<br><br>
 
-Stay tuned!
+*Stay tuned! <3*
 
----
 
 ## Planned Features
 
