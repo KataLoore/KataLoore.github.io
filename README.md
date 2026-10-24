@@ -14,7 +14,7 @@ Secondly, I wish to test out new technologies and explore the possibilities of c
 
 A lot of digital knitting tools are old, ugly and outdated - with a UX which makes you want to pull your hair out of your scalp. This project will act as an outlet for my frustrations (though it will certainly be the cause of new ones), and allow me to create thorough, modern and creative tools to use in my old granny hobby.
 
-The long-term goal is to build and expand the website with different modules and functionality, but there's no clear plan quite yet - It's a work in progress. 
+The long-term goal is to build and expand the website with different modules and functionality, but there's no clear plan quite yet - It's a work in progress. If you want you can check out the current deployment of my work on [keepsakeknits.com](https://keepsakeknits.com/)
 
 *Stay tuned! <3*
 
