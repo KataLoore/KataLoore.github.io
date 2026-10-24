@@ -1,75 +1,37 @@
-# React + TypeScript + Vite
+<img width="1672" height="606" alt="Keepsake Knits (2)" src="https://github.com/user-attachments/assets/97a77c6d-d904-4679-b60e-9812d610270b" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Keepsake Knits
 
-Currently, two official plugins are available:
+### Welcome to my web-programming hobby project! 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+As an avid knitter and freshly graduated developer, I figured I ought to have a project which combines my interest for knitting and programming - *this is that project.*
 
-## React Compiler
+### What am I hoping to achieve?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+First and foremost, I want to improve my skills as a developer and test out what I learn during the [full stack open course](https://github.com/KataLoore/fullstackopen) which I am currently working on. 
 
-## Expanding the ESLint configuration
+Secondly, I wish to test out new technologies and explore the possibilities of combining knitting and modern day programming. 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A lot of digital knitting tools are old, ugly and outdated - with a UX which makes you want to pull your hair out of your scalp. This project will act as an outlet for my frustrations (though it will certainly be the cause of new ones), and allow me to create thorough, modern and creative tools to use in my old granny hobby.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The long-term goal is to build and expand the website with different modules and functionality, but there's no clear plan quite yet - It's a work in progress. If you want you can check out the current deployment of my work on [keepsakeknits.com](https://keepsakeknits.com/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+*Stay tuned! <3*
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 
-```
+## Planned Features
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- **Knitting Design Studio** – Create knitting charts using an interactive grid editor, with future support for 3D garment visualization.
+- **Project Management** – Organize knitting projects, track progress, and document yarn, patterns, and modifications.
+- **Statistics & Gamification** – Track knitting sessions, set goals, and unlock achievements.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tech Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React
+- TypeScript
+- Vite
+- CSS
 
-```
+## Status
+
+Early development 🚧
