@@ -1,0 +1,30 @@
+.site-footer {
+  padding: 24px 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+  color: var(--text);
+}
+
+.site-footer-name {
+  font-family: var(--heading);
+  font-size: 24px;
+  color: var(--text-h);
+}
+
+.site-footer-contact {
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
