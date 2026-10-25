@@ -1,0 +1,23 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg);
+  transform: translateY(0);
+  transition: transform 180ms ease;
+}
+
+.site-header--hidden {
+  transform: translateY(-100%);
+}
+
+.site-header:focus-within {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+}
+

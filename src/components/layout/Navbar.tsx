@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import MenuButton from '../ui/MenuButton'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -6,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar" aria-label="Main navigation">
         <Link to="/" className="navbar-logo">Keepsake Knits</Link>
         <div className="navbar-menu">
-            <button className="navbar-button">...</button>
+            <MenuButton />
         </div>
     </nav>
     )

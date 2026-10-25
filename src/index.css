@@ -21,6 +21,7 @@
   --text-h: #08060d;
   --bg: #fff;
   --border: #e5e4e7;
+  --scrollbar-thumb: #79717f;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: 'Stardom', system-ui,'Segoe UI', Roboto, sans-serif;
@@ -30,6 +31,9 @@
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
+  scrollbar-color: var(--scrollbar-thumb) var(--bg);
+  scrollbar-width: thin;
+  scroll-padding-top: 120px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,6 +50,7 @@
     --text-h: #f3f4f6;
     --bg: #16171d;
     --border: #2e303a;
+    --scrollbar-thumb: #787b8c;
   }
 }
 
@@ -64,6 +69,31 @@ body {
   margin: 0;
 }
 
+/* Fallback for browsers without the standard scrollbar properties. */
+@supports not (scrollbar-width: thin) {
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--bg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border: 3px solid var(--bg);
+    border-radius: 12px;
+  }
+}
+
+@media (forced-colors: active) {
+  :root {
+    scrollbar-color: auto;
+    scrollbar-width: auto;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -79,6 +109,7 @@ h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
+  line-height: 1.15;
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
@@ -106,4 +137,19 @@ p.text-muted {
 
 p.text-primary {
   color: var(--text-h);
+}
+
+/* to prevent text divs from overflowing pages */
+.page-content {
+  width: 100%;
+  max-width: 1126px;
+  margin-inline: auto;
+  padding-inline: 36px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .page-content {
+    padding-inline: 24px;
+  }
 }

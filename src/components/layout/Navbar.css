@@ -8,9 +8,11 @@
 
 .navbar-menu {
   position: relative;
+  flex-shrink: 0;
 }
 
 .navbar-logo {
+  white-space: nowrap;
   font-family: var(--heading);
   font-size: 28px;
   font-weight: 400;
@@ -24,19 +26,14 @@
   outline-offset: 4px;
 }
 
-.navbar-button {
-  min-height: 44px;
-  padding: 8px 16px;
-  font: inherit;
-  color: var(--text-h);
-  background: transparent;
-  border: 0px solid var(--border); 
-  border-radius: 8px;
-  cursor: pointer;
-}
-
 @media (max-width: 600px) {
   .navbar {
     padding: 16px 24px;
+    gap: 16px;
   }
+
+  .navbar-logo {
+    font-size: clamp(22px, 5vw, 28px);
+  }
+
 }

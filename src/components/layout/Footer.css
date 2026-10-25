@@ -9,13 +9,27 @@
   color: var(--text);
 }
 
-.site-footer-name {
+.site-footer-logo {
   font-family: var(--heading);
   font-size: 24px;
   color: var(--text-h);
+  text-decoration: none;
+  line-height: 1.6;
 }
 
-.site-footer-contact {
+.site-footer-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.site-footer-logo:focus-visible,
+.site-footer-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.site-footer-item {
   font-size: 0.875rem;
   overflow-wrap: anywhere;
 }

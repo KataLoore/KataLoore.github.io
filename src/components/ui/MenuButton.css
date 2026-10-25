@@ -1,0 +1,29 @@
+.menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 16px;
+  font: inherit;
+  color: var(--text-h);
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background: var(--border);
+}
+
+.menu-button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .menu-button {
+    padding: 8px;
+  }
+}

@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-        <div>
+        <div  className="page-content">
             <h1>Keepsake Knits</h1>
             <p className="text-muted">by Kata</p>
             <br/>

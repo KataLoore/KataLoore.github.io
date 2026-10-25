@@ -1,0 +1,9 @@
+.about-copy {
+  max-width: 65ch;
+  margin: 32px auto;
+  text-align: left;
+}
+
+.about-copy p + p {
+  margin-top: 24px;
+}
