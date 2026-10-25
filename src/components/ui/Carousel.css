@@ -1,0 +1,82 @@
+.carousel {
+  margin-block: 48px;
+  text-align: left;
+  min-width: 0;
+}
+
+.carousel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.carousel-header h2 {
+  margin: 0;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-controls button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+  cursor: pointer;
+}
+
+.carousel-controls button:hover:not([aria-disabled="true"]) {
+  background: var(--border);
+}
+
+.carousel-controls button[aria-disabled="true"] {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.carousel-track {
+  --card-gap: 24px;
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 42%;
+  gap: var(--card-gap);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: var(--scrollbar-thumb) var(--bg);
+  scrollbar-width: thin;
+  list-style: none;
+  margin: 0;
+  padding: 4px 0 var(--card-gap);
+}
+
+.carousel-slide {
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+.carousel-slide > .image-card {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-controls button:focus-visible,
+.carousel-track:focus-visible {
+  outline: 2px solid var(--text-h);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .carousel-track {
+    --card-gap: 16px;
+    grid-auto-columns: 84%;
+  }
+}

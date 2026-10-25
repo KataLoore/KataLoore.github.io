@@ -17,18 +17,19 @@
 }
 
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --scrollbar-thumb: #79717f;
+  /* Dark is the release default until the light palette is ready. */
+  --text: #9ca3af;
+  --text-h: #f3f4f6;
+  --bg: #16171d;
+  --border: #2e303a;
+  --scrollbar-thumb: #787b8c;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: 'Stardom', system-ui,'Segoe UI', Roboto, sans-serif;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+  color-scheme: dark;
   color: var(--text);
   background: var(--bg);
   scrollbar-color: var(--scrollbar-thumb) var(--bg);
@@ -44,14 +45,14 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --scrollbar-thumb: #787b8c;
-  }
+/* Retain the light palette for later refinement and an eventual theme control. */
+:root[data-theme="light"] {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --scrollbar-thumb: #79717f;
+  color-scheme: light;
 }
 
 #root {
