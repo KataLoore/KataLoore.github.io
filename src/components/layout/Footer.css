@@ -1,12 +1,20 @@
 .site-footer {
-  padding: 24px 36px;
+  padding: 40px 36px;
+  border-top: 1px solid var(--border);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  gap: 16px;
+  align-items: flex-start;
+  gap: 24px;
   text-align: left;
   color: var(--text);
+}
+
+.site-footer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
 }
 
 .site-footer-logo {
@@ -36,9 +44,9 @@
 
 @media (max-width: 600px) {
   .site-footer {
-    padding: 24px;
+    padding: 32px 24px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 24px;
   }
 }

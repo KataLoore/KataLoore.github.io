@@ -5,10 +5,12 @@ const Footer = () => {
     return (
         <footer className="site-footer">
             <Link to="/" className="site-footer-logo">Keepsake Knits</Link>
-            <p className="site-footer-item">
-                <Link to="/about" className="site-footer-link">About</Link>
-            </p>
-            <p className="site-footer-item">E-mail: contact@keepsakeknits.com</p>
+            <div className="site-footer-details">
+                <p className="site-footer-item">
+                    <Link to="/about" className="site-footer-link">About this website</Link>
+                </p>
+                <p className="site-footer-item">Get in touch: contact@keepsakeknits.com</p>
+            </div>
         </footer>
     )
 }
